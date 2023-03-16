@@ -29,7 +29,7 @@ function App() {
             method: 'GET',
             redirect: 'follow'
         }
-        const data = await fetch(`http://localhost:8080/questions/?clientId=${clientId}`, requestOptions);
+        const data = await fetch(`https://payload-demo-tpm.herokuapp.com/questions/?clientId=${clientId}`, requestOptions);
         const datos = await data.json()
         const totalDocs = datos.data.totalDocs
         const payload = datos.data.docs[0];

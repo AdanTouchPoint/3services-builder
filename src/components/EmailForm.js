@@ -113,7 +113,7 @@ const EmailForm = ({
     //console.log(dataUser.text.replace(/\n\r?/g, "<br/>"))
     const payload = await axios
     .post(
-      `http://localhost:8080/email-builder?questions=${JSON.stringify(
+      `https://payload-demo-tpm.herokuapp.com/email-builder?questions=${JSON.stringify(
         questions
       )}&user=${JSON.stringify(user)}`
     )
