@@ -118,13 +118,13 @@ const EmailForm = ({
       )}&user=${JSON.stringify(user)}`
     )
     await setShowLoadSpin(false);
-    if (payload.data.code === 200) {
+    if (payload.status === 200) {
       correoEnviado("Si", user, emailData );
       setShowEmailForm(true);
       setShowThankYou(false);
       dataUser.id = "";
     }
-    if (payload.data.code !== 200) {
+    if (payload.status !== 200) {
       correoEnviado("No",  user, emailData );
       return (
         <Alert>
