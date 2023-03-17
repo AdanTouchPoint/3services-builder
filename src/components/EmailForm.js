@@ -145,10 +145,6 @@ const EmailForm = ({
     setShowFindForm(false);
     setShowEmailForm(true);
   };
-
-  useEffect(() => {
-    return console.log(emailData);
-  }, [emailData]);
   //console.log("emailData", emailData);
   //console.log(dataUser, "data user");
   return (

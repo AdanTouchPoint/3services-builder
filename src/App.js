@@ -39,8 +39,7 @@ function App() {
             filtered.push(payload[key])
           }
         }
-    if (totalDocs > 0) {  
-      console.log(filtered)
+    if (totalDocs > 0) {
       setDataQuestions(filtered)
     }
     }
