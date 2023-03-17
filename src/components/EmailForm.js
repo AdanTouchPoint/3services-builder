@@ -35,8 +35,8 @@ const EmailForm = ({
       .replace(/\n\r?/g, "<br/>")
       .replace(/#/g, " ")
     });
-    console.log(e.target.value);
-    console.log(questions);
+    //console.log(e.target.value);
+    //console.log(questions);
   }
   const handleUser = (e) => {
     setUser({
@@ -47,8 +47,8 @@ const EmailForm = ({
       ...dataUser,
       [e.target.name]: e.target.value,
     })
-    console.log(e.target.value);
-    console.log(user);
+    //console.log(e.target.value);
+    //console.log(user);
   }
   const handleChange = (e) => {
     e.preventDefault();
@@ -94,7 +94,7 @@ const EmailForm = ({
   const send = async (e) => {
     e.preventDefault();
     const form = e.currentTarget;
- console.log(validateObject(questions))
+ //console.log(validateObject(questions))
  const ask = validateObject(questions)
     if (form.checkValidity() === false) {
       e.preventDefault();
